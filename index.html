@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Set the title for the page -->
+    <title>Sales Inquery || koenvaessen.nl</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <!-- Import animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- Set the font for the page -->
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:300,700" rel="stylesheet">
+    <!-- Import Ionicons for icons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <!-- Set the main stylesheet for the page -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google reCAPTCHA script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<body>
+
+    <section class="bg-alt hero p-0">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Left-side content -->
+                <div class="col-sm-6 bg-faded text-center col-fixed">
+                    <div class="vMiddle">
+                        <!-- Main header content -->
+                        <h1 class="pt-4 h2">
+                            <!-- Set the main title and subtitle -->
+                            <span class="text-green">KoenVaessen.nl</span>
+                            <small>Seize the opportunity to own a premium domain tailored for personal branding or your business venture.</small>
+                        </h1>
+                        <!-- Information Paragraph -->
+                        <p class="mt-4">
+                            If you're interested in acquiring the .NL version of this domain,
+                            visit <a href="http://koenvaessen.nl" target="_blank" rel="noopener noreferrer">koenvaessen.com</a> for more information.
+                        </p>
+
+                        <!-- Buy Now Button -->
+                        <div class="pt-5">
+                            <label for="name">
+                                <a class="btn text-white bg-green btn-lg">Buy now for €150,-</a>
+                            </label>
+                        </div>
+                        <!-- Contact Icons Section -->
+                        <div class="row d-md-flex text-center justify-content-center text-primary action-icons">
+                            <!-- Contact Icon and Email -->
+                            <div class="col-sm-4">
+                                <p><em class="ion-ios-chatbubble-outline icon-md"></em></p>
+                                <p class="lead"><a href="mailto:eternal.elysium.echoes@gmail.com">Elysium Echoes</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right-side form -->
+                <div class="col-sm-6 offset-sm-6">
+                    <section class="bg-alt">
+                        <div class="container">
+                            <div class="row height-100">
+                                <div class="col-sm-10 offset-sm-1 mt-2">
+                                    <!-- Offer Form -->
+                                    <form id="main-offer-form" action="contact.php" method="post">
+                                        <h2 class="text-primary">Interested in this domain?</h2>
+                                        <hr />
+                                        <!-- Name Input -->
+                                        <div class="form-group">
+                                            <input type="text" name="name" id="name" class="form-control" placeholder="Full name (Required)">
+                                        </div>
+                                        <!-- Email Input -->
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <input type="email" name="email" class="form-control" placeholder="Email (Required)">
+                                                </div>
+                                            </div>
+                                            <!-- Price Input -->
+                                            <div class="form-group">
+                                                <input type="number" name="price" class="form-control" min="0" placeholder="Offer price in EUR? (Required)">
+                                            </div>
+                                            <!-- Comments Textarea -->
+                                            <div class="form-group">
+                                                <textarea name="comments" class="form-control" placeholder="Message (optional)"></textarea>
+                                            </div>
+                                            <!-- Google reCAPTCHA -->
+                                            <div class="form-group">
+                                                <div id="recaptcha" class="g-recaptcha" data-sitekey="6Lc_sf8aAAAAAFk3KIcYvqcIoo1HeCOZu4faK3DA" data-callback="onSubmit" data-size="invisible"></div>
+                                            </div>
+                                            <!-- Submit Button -->
+                                            <button type="submit" class="btn text-white btn-lg bg-primary btn-block">Make an offer</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Import jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Import jQuery validation plugin -->
+        <script src="js/jquery.validate.min.js"></script>
+        <!-- jQuery validation script -->
+        <script>
+            $("#main-offer-form").validate({
+                //...
+            });
+        </script>
+    </body>
+</html>
